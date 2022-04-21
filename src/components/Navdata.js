@@ -1,11 +1,11 @@
 import React from "react";
 
 
-function Navdata({src,name}){
+function Navdata({src,name,key}){
     return (
         <>
-            <div>
-                <a href="/top-offers.html">
+            <div key={key}>
+                <a href="/">
                     <img className="item-image" src={src} />
                     <div>{name}</div>
                 </a>

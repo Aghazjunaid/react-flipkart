@@ -1,28 +1,41 @@
 import React from 'react'
 import Navdata from '../components/Navdata'
+import {navDatas} from '../data';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
 function Home() {
     return (
         <>
             <div className="navData">
-                <div className="navData-container" id="navList">
-                    <Navdata src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" name="Top Offers"/>
-                    <Navdata src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" name="Grocery"/>
-                    <Navdata src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" name="Mobile"/>
-                    <Navdata src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" name="Fashion"/>
-                    <Navdata src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" name="Electronics"/>
-                    <Navdata src="https://rukminim1.flixcart.com/flap/128/128/image/ee162bad964c46ae.png?q=100" name="Home"/>
-                    <Navdata src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" name="Appliances"/>
-                    <Navdata src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100" name="Travel"/>
-                    <Navdata src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100" name="Beauty, Toys &amp; More"/>
+                <div className="navData-container">
+                    {
+                        navDatas.map((ele, index)=>{
+                            return (
+                                <Navdata src={ele.url} name = {ele.text} key={index} />
+                            )
+                        })
+                    }
                 </div>
             </div>
-            <div className="carousel">
+            {/* <div className="carousel">
                 <img src="https://rukminim1.flixcart.com/flap/3376/560/image/ae9966569097a8b7.jpg?q=50" alt="poco" />
                 <div className="carousel-left-symbol">&lt;</div>
                 <div className="carousel-right-symbol">&gt;</div>
-            </div>
-
+            </div> */}
+            <CarouselProvider
+        naturalSlideWidth={100}
+        naturalSlideHeight={17}
+        totalSlides={3}
+        isPlaying={true}
+        interval={3000}
+      >
+           <Slider>
+          <Slide index={0}><img width="100%" src="https://rukminim1.flixcart.com/flap/3376/560/image/d117a62eb5fbb8e1.jpg?q=50" /></Slide>
+          <Slide index={1}><img width="100%" src="https://rukminim1.flixcart.com/flap/3376/560/image/57267a180af306fe.jpg?q=50" /></Slide>
+          <Slide index={2}><img width="100%" src="https://rukminim1.flixcart.com/flap/3376/560/image/ae9966569097a8b7.jpg?q=50" /></Slide>
+        </Slider>
+      </CarouselProvider>
             <div className="deals">
                 <div className="footwear" style={{ width: "80%" }}>
                     <div className="footwear-header">
