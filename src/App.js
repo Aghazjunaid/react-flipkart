@@ -1,15 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
+import Layout from './components/Layout';
+import {BrowserRouter} from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <Header/>
-      <Home/>
-      <Footer/>
+      <BrowserRouter>
+        <Layout/>
+      </BrowserRouter>
     </>
   );
 }
