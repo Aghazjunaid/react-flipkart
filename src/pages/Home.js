@@ -1,47 +1,20 @@
 import React from 'react'
+import Navdata from '../components/Navdata'
 
 function Home() {
     return (
         <>
             <div className="navData">
                 <div className="navData-container" id="navList">
-                    <div><a href="/top-offers.html">
-                        <img className="item-image" src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" />
-                        <div>Top Offers</div>
-                    </a>
-                    </div><div><a href="/top-offers.html">
-                        <img className="item-image" src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" />
-                        <div>Grocery</div>
-                    </a>
-                    </div><div><a href="/top-offers.html">
-                        <img className="item-image" src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" />
-                        <div>Mobile</div>
-                    </a>
-                    </div><div><a href="/top-offers.html">
-                        <img className="item-image" src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" />
-                        <div>Fashion</div>
-                    </a>
-                    </div><div><a href="/top-offers.html">
-                        <img className="item-image" src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" />
-                        <div>Electronics</div>
-                    </a>
-                    </div><div><a href="/top-offers.html">
-                        <img className="item-image" src="https://rukminim1.flixcart.com/flap/128/128/image/ee162bad964c46ae.png?q=100" />
-                        <div>Home</div>
-                    </a>
-                    </div><div><a href="/top-offers.html">
-                        <img className="item-image" src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" />
-                        <div>Appliances</div>
-                    </a>
-                    </div><div><a href="/top-offers.html">
-                        <img className="item-image" src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100" />
-                        <div>Travel</div>
-                    </a>
-                    </div><div><a href="/top-offers.html">
-                        <img className="item-image" src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100" />
-                        <div>Beauty, Toys &amp; More</div>
-                    </a>
-                    </div>
+                    <Navdata src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" name="Top Offers"/>
+                    <Navdata src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" name="Grocery"/>
+                    <Navdata src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" name="Mobile"/>
+                    <Navdata src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" name="Fashion"/>
+                    <Navdata src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" name="Electronics"/>
+                    <Navdata src="https://rukminim1.flixcart.com/flap/128/128/image/ee162bad964c46ae.png?q=100" name="Home"/>
+                    <Navdata src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" name="Appliances"/>
+                    <Navdata src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100" name="Travel"/>
+                    <Navdata src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100" name="Beauty, Toys &amp; More"/>
                 </div>
             </div>
             <div className="carousel">
