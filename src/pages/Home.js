@@ -1,9 +1,10 @@
 import React from 'react'
 import Navdata from '../components/Navdata'
-import {navDatas, dealsOfTheDay} from '../data';
+import {navDatas, dealsOfTheDay, topDealsOnFashion, furnitureBestSeller} from '../data';
 import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import Product from '../components/Product';
+
 
 function Home() {
     return (
@@ -78,48 +79,13 @@ function Home() {
                 </div>
                 <hr/>
                 <div className="footwear-cards">
-                    <div className="footwear-Card-design">
-                        <img src="https://rukminim1.flixcart.com/image/150/150/ktszgy80/sandal/q/q/p/11-382996-11-puma-quarry-dark-shadow-limepunch-original-imag72gqakcgfrv9.jpeg?q=70" alt="shoe"/>
-                        <div className="title">ADIDAS, Reebok, Puma...</div>
-                        <div className="price">Under ₹799</div>
-                        <div className="category">Sports Shoes, Slippers....</div>
-                    </div>
-                    <div className="footwear-Card-design">
-                        <img src="https://rukminim1.flixcart.com/image/150/150/krxtrww0/shoe/3/b/o/10-sx0677g-sparx-turkeyblueblack-original-imag5mcfzuvssh8y.jpeg?q=70" alt="shoe"/>
-                        <div className="title">ADIDAS, Reebok, Puma...</div>
-                        <div className="price">Under ₹799</div>
-                        <div className="category">Sports Shoes, Slippers....</div>
-                    </div>
-                    <div className="footwear-Card-design">
-                        <img src="https://rukminim1.flixcart.com/image/150/150/k5lcvbk0/backpack/z/t/s/boho-with-rain-cover-blue-casual-backpack-23l-bpboh1rblu-original-imafz8f66gvawsgf.jpeg?q=70" alt="shoe"/>
-                        <div className="title">ADIDAS, Reebok, Puma...</div>
-                        <div className="price">Under ₹799</div>
-                        <div className="category">Sports Shoes, Slippers....</div>
-                    </div>
-                    <div className="footwear-Card-design">
-                        <img src="https://rukminim1.flixcart.com/image/150/150/knqd3m80/slipper-flip-flop/b/j/u/11-ci8800-301nike-nike-sequoia-white-black-original-imag2ccexqm38kdh.jpeg?q=70" alt="shoe"/>
-                        <div className="title">ADIDAS, Reebok, Puma...</div>
-                        <div className="price">Under ₹799</div>
-                        <div className="category">Sports Shoes, Slippers....</div>
-                    </div>
-                    <div className="footwear-Card-design">
-                        <img src="https://rukminim1.flixcart.com/image/150/150/k0plpjk0/laptop-bag/g/v/w/13-3-inch-laptop-sleeve-bag-with-shoulder-strap-handle-grey-original-imafgd7mhb5wqwyp.jpeg?q=70" alt="shoe"/>
-                        <div className="title">ADIDAS, Reebok, Puma...</div>
-                        <div className="price">Under ₹799</div>
-                        <div className="category">Sports Shoes, Slippers....</div>
-                    </div>
-                    <div className="footwear-Card-design">
-                        <img src="https://rukminim1.flixcart.com/image/150/150/k6fd47k0/shoe/g/u/p/cd0188-005-13-nike-black-white-chile-red-glass-blue-original-imafzvwzhchqphte.jpeg?q=70" alt="shoe"/>
-                        <div className="title">ADIDAS, Reebok, Puma...</div>
-                        <div className="price">Under ₹799</div>
-                        <div className="category">Sports Shoes, Slippers....</div>
-                    </div>
-                    <div className="footwear-Card-design">
-                        <img src="https://rukminim1.flixcart.com/image/150/150/klv7ekw0/shoe/g/z/j/7-642-loafers-90-kzaara-mehandi-original-imagywbkemjkgapz.jpeg?q=70" alt="shoe"/>
-                        <div className="title">ADIDAS, Reebok, Puma...</div>
-                        <div className="price">Under ₹799</div>
-                        <div className="category">Sports Shoes, Slippers....</div>
-                    </div>
+                    {
+                        topDealsOnFashion.map((ele,index) => {
+                            return(
+                                <Product ele={ele} index={index} />
+                            )
+                        })
+                    }
                 </div>
             </div>
 
@@ -130,48 +96,13 @@ function Home() {
                 </div>
                 <hr/>
                 <div className="footwear-cards">
-                    <div className="footwear-Card-design">
-                        <img src="https://rukminim1.flixcart.com/image/150/150/ke7ff680/hammock-swing/j/f/u/q3-jkaf-y3l0-furniture-kart-original-imafux96kpy7grch.jpeg?q=70" alt="shoe"/>
-                        <div className="title">ADIDAS, Reebok, Puma...</div>
-                        <div className="price">Under ₹799</div>
-                        <div className="category">Sports Shoes, Slippers....</div>
-                    </div>
-                    <div className="footwear-Card-design">
-                        <img src="https://rukminim1.flixcart.com/image/150/150/jfk00i80/inflatable-sofa/d/g/q/pvc-leatherette-2-seater-inflatable-sofa-color-black-wds-original-imaf3j6fzyhywqrq.jpeg?q=70" alt="shoe"/>
-                        <div className="title">ADIDAS, Reebok, Puma...</div>
-                        <div className="price">Under ₹799</div>
-                        <div className="category">Sports Shoes, Slippers....</div>
-                    </div>
-                    <div className="footwear-Card-design">
-                        <img src="https://rukminim1.flixcart.com/image/150/150/bean-bag/h/v/b/f8-the-furniture-store-xxxl-original-imae65d3wg7qzpkn.jpeg?q=70" alt="shoe"/>
-                        <div className="title">ADIDAS, Reebok, Puma...</div>
-                        <div className="price">Under ₹799</div>
-                        <div className="category">Sports Shoes, Slippers....</div>
-                    </div>
-                    <div className="footwear-Card-design">
-                        <img src="https://rukminim1.flixcart.com/image/150/150/jffpoy80/office-study-chair/v/v/z/pp-am-5001cb-apex-original-imaf3u8rbr5cdycv.jpeg?q=70" alt="shoe"/>
-                        <div className="title">ADIDAS, Reebok, Puma...</div>
-                        <div className="price">Under ₹799</div>
-                        <div className="category">Sports Shoes, Slippers....</div>
-                    </div>
-                    <div className="footwear-Card-design">
-                        <img src="https://rukminim1.flixcart.com/image/150/150/jlqwpe80-1/tv-entertainment-unit/d/t/f/particle-board-holland-tv-unit-black-forzza-black-original-imaf8t5ybywcdtys.jpeg?q=70" alt="shoe"/>
-                        <div className="title">ADIDAS, Reebok, Puma...</div>
-                        <div className="price">Under ₹799</div>
-                        <div className="category">Sports Shoes, Slippers....</div>
-                    </div>
-                    <div className="footwear-Card-design">
-                        <img src="https://rukminim1.flixcart.com/image/150/150/jgcktjk0/sofa-set/z/b/u/grey-jute-nanoblkgr311-3-1-1-bharat-lifestyle-black-grey-original-imaf4myfta6nhkuh.jpeg?q=70" alt="shoe"/>
-                        <div className="title">ADIDAS, Reebok, Puma...</div>
-                        <div className="price">Under ₹799</div>
-                        <div className="category">Sports Shoes, Slippers....</div>
-                    </div>
-                    <div className="footwear-Card-design">
-                        <img src="https://rukminim1.flixcart.com/image/150/150/kekadu80/hammock-swing/d/t/k/fc-sj-01-furniture-kart-original-imafv7bh7v349hhh.jpeg?q=70" alt="shoe"/>
-                        <div className="title">ADIDAS, Reebok, Puma...</div>
-                        <div className="price">Under ₹799</div>
-                        <div className="category">Sports Shoes, Slippers....</div>
-                    </div>
+                    {
+                        furnitureBestSeller.map((ele,index) => {
+                            return(
+                                <Product ele={ele} index={index} />
+                            )
+                        })
+                    }
                 </div>
             </div>
 
