@@ -24,18 +24,18 @@ function Home() {
                 <div className="carousel-right-symbol">&gt;</div>
             </div> */}
             <CarouselProvider
-        naturalSlideWidth={100}
-        naturalSlideHeight={17}
-        totalSlides={3}
-        isPlaying={true}
-        interval={3000}
-      >
-           <Slider>
-          <Slide index={0}><img width="100%" src="https://rukminim1.flixcart.com/flap/3376/560/image/d117a62eb5fbb8e1.jpg?q=50" /></Slide>
-          <Slide index={1}><img width="100%" src="https://rukminim1.flixcart.com/flap/3376/560/image/57267a180af306fe.jpg?q=50" /></Slide>
-          <Slide index={2}><img width="100%" src="https://rukminim1.flixcart.com/flap/3376/560/image/ae9966569097a8b7.jpg?q=50" /></Slide>
-        </Slider>
-      </CarouselProvider>
+                naturalSlideWidth={100}
+                naturalSlideHeight={17}
+                totalSlides={3}
+                isPlaying={true}
+                interval={3000}
+            >
+                <Slider>
+                <Slide index={0}><img width="100%" src="https://rukminim1.flixcart.com/flap/3376/560/image/d117a62eb5fbb8e1.jpg?q=50" /></Slide>
+                <Slide index={1}><img width="100%" src="https://rukminim1.flixcart.com/flap/3376/560/image/57267a180af306fe.jpg?q=50" /></Slide>
+                <Slide index={2}><img width="100%" src="https://rukminim1.flixcart.com/flap/3376/560/image/ae9966569097a8b7.jpg?q=50" /></Slide>
+                </Slider>
+            </CarouselProvider>
             <div className="deals">
                 <div className="footwear" style={{ width: "80%" }}>
                     <div className="footwear-header">
