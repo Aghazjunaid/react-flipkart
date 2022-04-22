@@ -3,6 +3,7 @@ import {Route, Routes} from 'react-router-dom';
 import Footer from './Footer';
 import Header from './header';
 import Home from '../pages/Home';
+import Login from '../pages/Login';
 
 function Layout () {
     return (
@@ -10,7 +11,7 @@ function Layout () {
             <Header/>
                 <Routes>
                     <Route path='/' element={<Home/>} />
-
+                    <Route path='/login' element={<Login/>} />
                 </Routes>
             <Footer/>
         

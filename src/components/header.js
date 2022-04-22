@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 
 function Header() {
     return (
@@ -30,7 +31,7 @@ function Header() {
                         <i className="fa fa-search"></i>
                     </div>
                     <div className="btns">
-                        <input type="button" value="Login" />
+                        <Link to="/login"> <input type="button" value="Login" /> </Link>
                         <div className="more-dropdown">
                             <div className="dropbtn">More</div>
                             <div className="dropdown-content">
