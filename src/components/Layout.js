@@ -18,7 +18,6 @@ function Layout () {
                     <Route path='/top-offers' element={<NavDataPage/>} />
                 </Routes>
             <Footer/>
-        
         </>
     )
 }
