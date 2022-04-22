@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from 'react-router-dom';
 
 function Login() {
     return (
@@ -39,7 +39,7 @@ function Login() {
                     </div>
 
                     <div class="user-id">
-                        <p class="footer2"><a href="/">New to Flipkart? Create an account</a></p>
+                        <p class="footer2"><Link to="/signup">New to Flipkart? Create an account</Link></p>
                     </div>
                 </div>
             </div>
