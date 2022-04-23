@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Routes} from 'react-router-dom';
+import {Route, Routes, useLocation} from 'react-router-dom';
 import Footer from './Footer';
 import Header from './header';
 import Home from '../pages/Home';
@@ -8,6 +8,10 @@ import Signup from '../pages/Signup';
 import NavDataPage from '../pages/Navdata-page';
 
 function Layout () {
+    let location = useLocation();
+
+    let isActive = location.pathname.includes(["login","signup"])
+    console.log(isActive)
     return (
         <>
             <Header/>
