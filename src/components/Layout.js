@@ -6,15 +6,19 @@ import Home from '../pages/Home';
 import Login from '../pages/Login';
 import Signup from '../pages/Signup';
 import NavDataPage from '../pages/Navdata-page';
+import Random from './Random';
 
 function Layout () {
     let location = useLocation();
 
-    let isActive = location.pathname.includes(["login","signup"])
-    console.log(isActive)
+    let isLogin = location.pathname.includes("login")
+    let isSignup = location.pathname.includes("signup")
+
     return (
         <>
             <Header/>
+            {isLogin || isSignup ? 
+            <Random/> : null}
                 <Routes>
                     <Route path='/' element={<Home/>} />
                     <Route path='/login' element={<Login/>} />
