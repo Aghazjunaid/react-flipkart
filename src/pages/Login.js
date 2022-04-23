@@ -4,10 +4,10 @@ import {Link} from 'react-router-dom';
 function Login() {
     return (
         <>
-            <div class="box">
-                <div class="box-container">
-                    <div class=" box1">
-                        <div class="inline-text">
+            <div className="box">
+                <div className="box-container">
+                    <div className=" box1">
+                        <div className="inline-text">
                             <h1>Login</h1>
                             <p>
                                 Get access to your Orders,<br />
@@ -16,30 +16,30 @@ function Login() {
                             </p>
                         </div>
                     </div>
-                    <div class="box2">
-                        <div class="user-id user-data">
+                    <div className="box2">
+                        <div className="user-id user-data">
                             <input type="email" placeholder="Enter Email/Mobile Number" />
                         </div>
-                        <div class="user-id user-data">
+                        <div className="user-id user-data">
                             <input type="password" placeholder="Enter Password" />
                         </div>
 
                         <span><a href="/">Forgot?</a> </span>
-                    <p class="terms">By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</p>
-                    <div class="btns1">
-                        <div class="user-id button">
+                    <p className="terms">By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</p>
+                    <div className="btns1">
+                        <div className="user-id button">
                             <input type="submit" name="" id="" value="Login" />
                         </div>
-                        <div class="user-id">
+                        <div className="user-id">
                             <p>OR</p>
                         </div>
-                        <div class="user-id button">
+                        <div className="user-id button">
                             <input type="reset" name="" id="" value="Request OTP" />
                         </div>
                     </div>
 
-                    <div class="user-id">
-                        <p class="footer2"><Link to="/signup">New to Flipkart? Create an account</Link></p>
+                    <div className="user-id">
+                        <p className="footer2"><Link to="/signup">New to Flipkart? Create an account</Link></p>
                     </div>
                 </div>
             </div>
