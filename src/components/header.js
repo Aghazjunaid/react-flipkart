@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
+
 function Header() {
     return (
         <>
@@ -10,14 +11,14 @@ function Header() {
                         <div className="mobile-icons-left">
                             <i className="fa fa-bars"></i>
                             <div className="logo">
-                                <a href="/">
+                                <Link to="/">
                                     <img height="20" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="logo" />
                                     <div style={{width: "90px"}}>
                                         <span style={{fontStyle: "italic", fontSize: "14px", color: "white"}}>Explore</span>
                                         <span style={{color: "yellow", fontStyle: "italic", fontSize: "12px"}}>Plus</span>
                                         <img height="10" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png" alt="logo" />
                                     </div> 
-                                </a>   
+                                </Link>   
                             </div>
                         </div>
                         <div className="mobile-icons-right">
