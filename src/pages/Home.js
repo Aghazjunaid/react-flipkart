@@ -39,7 +39,7 @@ function Home() {
                 </Slider>
             </CarouselProvider>
             <div className="deals">
-                <div className="footwear" style={{ width: "80%" }}>
+                <div className="footwear deals-width">
                     <div className="footwear-header">
                         <div className="footwear-header-clock">
                             <h2 style={{
@@ -67,7 +67,7 @@ function Home() {
                         }
                     </div>
                 </div>
-                <div className="ad" style={{ backgroundColor: "#f0f0f0", width: "20%" }}>
+                <div className="ad">
                     <img src="https://rukminim1.flixcart.com/flap/464/708/image/28d7b7990028c9bf.jpg?q=70" alt="ads" />
                 </div>
             </div>
